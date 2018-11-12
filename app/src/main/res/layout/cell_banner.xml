@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hh_color_d" >
+
+    <com.base.widget.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:corner_radius_all="22dp" >
+
+        <com.facebook.fresco.FrescoImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.facebook.fresco.FrescoImageView>
+    </com.base.widget.RoundFrameLayout>
+
+</RelativeLayout>

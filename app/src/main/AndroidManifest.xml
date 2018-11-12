@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wmlives.heihei"
+    android:versionCode="1120"
+    android:versionName="1.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <!-- android.permission-group.STORAGE 外部存储权限组 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- android.permission-group.MICROPHONE 录音权限组 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- share sdk -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <!-- amap sdk -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.wmlives.heihei" />
+    <!-- 替换为第三方应用的包名 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.wmlives.heihei"
+        android:protectionLevel="normal" >
+    </permission>
+    <!-- 替换为第三方应用的包名 -->
+
+    <application
+        android:name="com.base.host.HostApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3dd8dfebf9906153d91fc8e69977e35c" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57ed14f6e0f55a60bc000722" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="huawei" />
+
+        <activity
+            android:name="com.heihei.login.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoAnimationTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.heihei.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.heihei.fragment.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.base.host.BaseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+        </activity>
+        <service
+            android:name="com.heihei.websocket.WebSocketClient"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name=".wxapi.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.heihei.logic.HeiheiReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.base.utils.update.receivers.ApkInstallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.heihei.fragment.link.OutLinkActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <!-- 显示数据 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+
+                <data android:scheme="wmlives_heihei" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="xr8GOI9Izf8pBvb90VSbN1" />
+        <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="s6v0z41qQx6Qgzx9dWtqfA" />
+        <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="UKsmBcWRfW9fpCl3Niz062" />
+        <!-- 替换为第三方应用的APPSECRET -->
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.user.message" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.wmlives.heihei"
+            android:exported="true"
+            android:process=":pushservice" />
+        <!-- 替换为第三方应用的包名 -->
+
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.heihei.logic.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.xr8GOI9Izf8pBvb90VSbN1" />
+            </intent-filter>
+        </receiver>
+        <!-- 个推SDK配置结束 -->
+
+    </application>
+
+</manifest>

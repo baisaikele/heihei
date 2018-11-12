@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/full_transparent"
+        android:orientation="vertical" >
+
+        <com.base.widget.tabhost.main.MainTabHost
+            android:id="@+id/tab_host"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_tab_host_height"
+            android:background="@color/full_transparent"
+            android:orientation="horizontal" >
+
+            <com.base.widget.tabhost.main.MainTabButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/full_transparent"
+                diy:drawableTop="@drawable/home_tab_btn_bg_selector_home"
+                diy:tabtext="@string/main_tabbar_home" >
+            </com.base.widget.tabhost.main.MainTabButton>
+
+            <com.base.widget.tabhost.main.MainTabButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/full_transparent"
+                diy:drawableTop="@drawable/home_tab_btn_bg_selector_collections"
+                diy:tabtext="@string/main_tabbar_questions" >
+            </com.base.widget.tabhost.main.MainTabButton>
+
+            <com.base.widget.tabhost.main.MainTabButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/full_transparent"
+                diy:drawableTop="@drawable/home_tab_btn_bg_selector_male"
+                diy:tabtext="@string/main_tabbar_dynamic" >
+            </com.base.widget.tabhost.main.MainTabButton>
+        </com.base.widget.tabhost.main.MainTabHost>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        android:background="@color/full_transparent" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/gift_contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/full_transparent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+    </FrameLayout>
+
+</RelativeLayout>

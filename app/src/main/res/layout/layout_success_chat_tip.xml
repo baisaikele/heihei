@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.widget.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text_item_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_g"
+    diy:corner_radius_topleft="0dp"
+    diy:corner_radius_topright="0dp"
+    diy:corner_radius_bottomleft="8dp"
+    diy:corner_radius_bottomright="8dp" >
+    
+    <RelativeLayout 
+        android:layout_width="172dp"
+        android:layout_height="24dp">
+        <TextView 
+            android:id="@+id/tv_tip"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:text="正在连接"/>
+    </RelativeLayout>
+
+</com.base.widget.RoundFrameLayout>

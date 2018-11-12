@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.cell.MessageCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp" >
+
+        <TextView
+            android:id="@+id/btn_pm"
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/message_invitation"
+            android:textColor="@color/hh_color_g"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/btn_ignore"
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_pm"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/message_close"
+            android:textColor="@color/hh_color_c"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btn_ignore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.heihei.fragment.live.widget.AvatarImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/pm_user_head_size"
+                android:layout_height="@dimen/pm_user_head_size"
+                android:layout_marginLeft="@dimen/t10dp" >
+            </com.heihei.fragment.live.widget.AvatarImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="北川景子"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t14dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_probate"
+                        android:layout_width="@dimen/t10dp"
+                        android:layout_height="@dimen/t10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/t3dp"
+                        android:src="@drawable/hh_vip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t1dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_trynumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message_dialog_item_due_try_number"
+                        android:textColor="@color/hh_color_b"
+                        android:textSize="@dimen/t12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_duetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/t8dp"
+                        android:text="20:10"
+                        android:textColor="@color/hh_color_b"
+                        android:textSize="@dimen/t12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/hh_color_line" />
+
+</com.heihei.cell.MessageCell>

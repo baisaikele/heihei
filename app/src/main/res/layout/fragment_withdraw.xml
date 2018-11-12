@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_success_tip"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/hh_color_line" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/hh_charge_accept" />
+
+        <TextView
+            style="@style/tv_g_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="@string/user_present_commit" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/hh_color_line" />
+
+    <RelativeLayout
+        android:id="@+id/btn_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/user_persent_to_account" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:src="@drawable/hh_charge_alipay" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/tv_a_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="132****6127" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/hh_me_enter" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            android:id="@+id/tv_money_tip"
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/user_withdrawal_money" />
+
+        <EditText
+            android:id="@+id/et_money"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:hint="当前可提现余额100元"
+            android:inputType="numberDecimal"
+            android:paddingRight="@dimen/t15dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_login_selector"
+        android:enabled="false"
+        android:text="@string/user_account_withdrawals"
+        android:textColor="@color/btn_login_text_color_selector"
+        android:textSize="@dimen/t16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/btn_withdraw_proxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/t15dp"
+            android:text="@string/present_rules"
+            android:textColor="@color/hh_color_b"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="200dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="122dp"
+            android:background="@drawable/btn_login_selector"
+            android:enabled="true"
+            android:text="@string/success"
+            android:textColor="@color/btn_login_text_color_selector"
+            android:textSize="@dimen/t16dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

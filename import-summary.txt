@@ -1,0 +1,102 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .gitignore.swp
+* README.md
+* debug.keystore
+* ic_launcher-web.png
+* perfect.keystore
+* proguard-project-test.txt
+* proguard-project.txt
+* proguard.cfg
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:26.0.0-alpha1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\alipaySdk-20160825.jar => app\libs\alipaySdk-20160825.jar
+* libs\AMap_Location_V2.6.0_20160628.jar => app\libs\AMap_Location_V2.6.0_20160628.jar
+* libs\android-support-v7-recyclerview.jar => app\libs\android-support-v7-recyclerview.jar
+* libs\armeabi\libbitmaps.so => app\src\main\jniLibs\armeabi\libbitmaps.so
+* libs\armeabi\libgetuiext2.so => app\src\main\jniLibs\armeabi\libgetuiext2.so
+* libs\armeabi\libgifimage.so => app\src\main\jniLibs\armeabi\libgifimage.so
+* libs\armeabi\libimagepipeline.so => app\src\main\jniLibs\armeabi\libimagepipeline.so
+* libs\armeabi\libmemchunk.so => app\src\main\jniLibs\armeabi\libmemchunk.so
+* libs\armeabi\libmp3lame.so => app\src\main\jniLibs\armeabi\libmp3lame.so
+* libs\armeabi\libnetworkbase.so => app\src\main\jniLibs\armeabi\libnetworkbase.so
+* libs\armeabi\libpldroid_mmprocessing.so => app\src\main\jniLibs\armeabi\libpldroid_mmprocessing.so
+* libs\armeabi\libpldroid_rtc_streaming.so => app\src\main\jniLibs\armeabi\libpldroid_rtc_streaming.so
+* libs\armeabi\libpldroid_streaming_aac_encoder.so => app\src\main\jniLibs\armeabi\libpldroid_streaming_aac_encoder.so
+* libs\armeabi\libpldroid_streaming_core.so => app\src\main\jniLibs\armeabi\libpldroid_streaming_core.so
+* libs\armeabi\libpldroid_streaming_h264_encoder.so => app\src\main\jniLibs\armeabi\libpldroid_streaming_h264_encoder.so
+* libs\armeabi\libpldroidplayer.so => app\src\main\jniLibs\armeabi\libpldroidplayer.so
+* libs\armeabi\libstatic-webp.so => app\src\main\jniLibs\armeabi\libstatic-webp.so
+* libs\armeabi\libuploadnetwork.so => app\src\main\jniLibs\armeabi\libuploadnetwork.so
+* libs\armeabi\libwebp.so => app\src\main\jniLibs\armeabi\libwebp.so
+* libs\armeabi\libwebpimage.so => app\src\main\jniLibs\armeabi\libwebpimage.so
+* libs\armeabi\libweibosdkcore.so => app\src\main\jniLibs\armeabi\libweibosdkcore.so
+* libs\bolts-android-1.1.4.jar => app\libs\bolts-android-1.1.4.jar
+* libs\drawee-v0.9.0.jar => app\libs\drawee-v0.9.0.jar
+* libs\engine.io-client-0.6.0.jar => app\libs\engine.io-client-0.6.0.jar
+* libs\fbcore-v0.9.0.jar => app\libs\fbcore-v0.9.0.jar
+* libs\fresco-v0.9.0.jar => app\libs\fresco-v0.9.0.jar
+* libs\GetuiSDK2.9.3.0.jar => app\libs\GetuiSDK2.9.3.0.jar
+* libs\happy-dns-0.2.10.jar => app\libs\happy-dns-0.2.10.jar
+* libs\imagepipeline-base-v0.9.0.jar => app\libs\imagepipeline-base-v0.9.0.jar
+* libs\imagepipeline-okhttp-v0.9.0.jar => app\libs\imagepipeline-okhttp-v0.9.0.jar
+* libs\imagepipeline-v0.9.0.jar => app\libs\imagepipeline-v0.9.0.jar
+* libs\libammsdk.jar => app\libs\libammsdk.jar
+* libs\MobCommons-2016.0816.1507.jar => app\libs\MobCommons-2016.0816.1507.jar
+* libs\MobTools-2016.0816.1507.jar => app\libs\MobTools-2016.0816.1507.jar
+* libs\okhttp-2.4.0.jar => app\libs\okhttp-2.4.0.jar
+* libs\okhttp-ws-2.4.0.jar => app\libs\okhttp-ws-2.4.0.jar
+* libs\okio-1.6.0.jar => app\libs\okio-1.6.0.jar
+* libs\pili-android-qos.jar => app\libs\pili-android-qos.jar
+* libs\pldroid-player-1.3.2.jar => app\libs\pldroid-player-1.3.2.jar
+* libs\pldroid-rtc-streaming-1.0.0.jar => app\libs\pldroid-rtc-streaming-1.0.0.jar
+* libs\ShareSDK-Core-2.7.6.jar => app\libs\ShareSDK-Core-2.7.6.jar
+* libs\ShareSDK-SinaWeibo-2.7.6.jar => app\libs\ShareSDK-SinaWeibo-2.7.6.jar
+* libs\ShareSDK-Wechat-2.7.6.jar => app\libs\ShareSDK-Wechat-2.7.6.jar
+* libs\ShareSDK-Wechat-Core-2.7.6.jar => app\libs\ShareSDK-Wechat-Core-2.7.6.jar
+* libs\ShareSDK-Wechat-Moments-2.7.6.jar => app\libs\ShareSDK-Wechat-Moments-2.7.6.jar
+* libs\umeng-analytics-v6.0.3.jar => app\libs\umeng-analytics-v6.0.3.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

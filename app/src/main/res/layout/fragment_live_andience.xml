@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff222629" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_live" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/live_bottom"
+                    layout="@layout/layout_live_bottom" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_length_tip"
+                style="@style/tv_d_24"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/t54dp"
+                android:background="@color/hh_color_h"
+                android:gravity="center"
+                android:text="输入文字过长"
+                android:visibility="gone" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/messageviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t250dp"
+                android:layout_above="@id/bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="24dp"  >
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gift_contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+    </FrameLayout>
+
+</RelativeLayout>

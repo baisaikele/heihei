@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_d" >
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/listview"
+        android:layout_width="match_parent"
+        android:layout_height="297dp" >
+    </ListView>
+
+    <RelativeLayout 
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:visibility="gone"
+        >
+        <TextView 
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="空空荡荡，啥也木有~"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>

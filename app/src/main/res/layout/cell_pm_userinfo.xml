@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.fragment.live.widget.LiveUserView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/t102dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/shape_bg_live_userinfo"
+    android:minWidth="@dimen/t107dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/t24dp"
+    android:paddingRight="@dimen/t24dp" >
+
+    <com.base.widget.RippleBackground
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content"
+        android:layout_width="@dimen/t44dp"
+        android:layout_height="@dimen/t44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t10dp"
+        app:rb_duration="2500"
+        app:rb_radius="@dimen/t15dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="1.5" >
+
+        <com.base.widget.RoundedImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/pm_user_head_size"
+            android:layout_height="@dimen/pm_user_head_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/user_head_padding"
+            android:layout_marginTop="@dimen/user_head_padding"
+            app:corner_radius="200dp" >
+        </com.base.widget.RoundedImageView>
+    </com.base.widget.RippleBackground>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t1dp" >
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14dp" />
+
+        <ImageView
+            android:layout_width="@dimen/t10dp"
+            android:layout_height="@dimen/t10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t3dp"
+            android:layout_toRightOf="@id/tv_nickname"
+            android:src="@drawable/hh_vip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/t2dp"
+        android:text="@string/user_dialog_ticker"
+        android:textColor="@color/hh_color_b"
+        android:textSize="@dimen/t12dp" />
+
+</com.heihei.fragment.live.widget.LiveUserView>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" >
+    </include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/hh_color_line" />
+
+    <RelativeLayout
+        android:id="@+id/btn_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t52dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/setting_notice" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/hh_me_enter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_proxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t52dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/setting_proxy" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/hh_me_enter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t52dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/setting_contact_us" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/hh_me_enter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/setting_copyright"
+            android:textColor="@color/hh_color_c"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

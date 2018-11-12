@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/full_transparent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            style="@style/TitlebarBtnStyle"
+           	android:scaleType="centerInside"
+           	android:layout_gravity="center"
+           	android:layout_marginLeft="@dimen/t10dp"
+            android:src="@drawable/hh_topbar_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            style="@style/TitlebarTextBtnStyle"
+            android:text="@string/back"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/iv_right"
+            style="@style/TitlebarBtnStyle"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/TitlebarTextBtnStyle"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_a_34"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hh_color_d" >
+    
+
+    <com.facebook.fresco.FrescoImageView
+        android:id="@+id/iv_image"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        >
+        
+    </com.facebook.fresco.FrescoImageView>
+    
+    
+    <com.base.animator.gift.GiftImageView
+        android:id="@+id/aa"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        >
+        
+    </com.base.animator.gift.GiftImageView>
+    
+</RelativeLayout>

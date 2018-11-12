@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.fragment.live.widget.DanmakuSwitch xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/t55dp"
+    android:layout_height="@dimen/t36dp"
+    android:background="@drawable/bg_danmaku_switch_18px"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/t36dp"
+        android:layout_height="@dimen/t30dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/t16dp"
+        android:background="@drawable/btn_danmaku_switch_selector"
+        android:textSize="@dimen/t12dp"
+        android:textColor="@color/btn_code_text_color_selector"
+        android:text="@string/light"/>
+    
+</com.heihei.fragment.live.widget.DanmakuSwitch>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t90dp"
+    android:background="@color/hh_color_d"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/t15dp"
+    android:paddingRight="@dimen/t15dp" >
+
+    <LinearLayout
+        android:id="@+id/btn_wx"
+        android:layout_width="@dimen/t113dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/t18dp"
+            android:layout_height="@dimen/t18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hh_register_wechat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t7dp"
+            android:text="@string/share_wx"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/t3dp"
+        android:layout_height="@dimen/t3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_bolt" />
+
+    <LinearLayout
+        android:id="@+id/btn_friend"
+        android:layout_width="@dimen/t113dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/t18dp"
+            android:layout_height="@dimen/t18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hh_live_share_friendcircle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t7dp"
+            android:text="@string/share_wx_friend"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/t3dp"
+        android:layout_height="@dimen/t3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_bolt" />
+
+    <LinearLayout
+        android:id="@+id/btn_sina"
+        android:layout_width="@dimen/t113dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/t18dp"
+            android:layout_height="@dimen/t18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hh_register_weibo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t7dp"
+            android:text="@string/share_sina"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14dp" />
+    </LinearLayout>
+
+</LinearLayout>

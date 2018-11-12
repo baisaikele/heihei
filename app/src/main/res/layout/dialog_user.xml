@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.widget.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/t249dp"
+    android:layout_height="wrap_content"
+    app:corner_radius_all="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hh_color_d"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/btn_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/t12dp"
+                android:paddingTop="@dimen/t9dp"
+                android:text="@string/user_manager"
+                android:textColor="@color/hh_color_a"
+                android:textSize="@dimen/t12dp" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="@dimen/t30dp"
+                android:layout_height="@dimen/t30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hh_live_popup_close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.heihei.fragment.live.widget.AvatarImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/pm_user_head_size"
+                android:layout_height="@dimen/pm_user_head_size"
+                android:layout_centerInParent="true" >
+            </com.heihei.fragment.live.widget.AvatarImageView>
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t6dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:text="LV.1"
+                android:textColor="@color/hh_color_a"
+                android:textSize="@dimen/t10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/t4dp"
+            android:gravity="center"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14dp" />
+
+        <TextView
+            android:id="@+id/tv_ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/t1dp"
+            android:gravity="center"
+            android:text="@string/user_dialog_ticker"
+            android:textColor="@color/hh_color_b"
+            android:textSize="12dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t40dp"
+            android:layout_marginRight="@dimen/t40dp"
+            android:layout_marginTop="@dimen/t10dp"
+            android:gravity="center"
+            android:padding="1px"
+            android:textColor="@color/hh_color_b"
+            android:textSize="@dimen/t12dp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:layout_marginRight="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t5dp" >
+
+            <RelativeLayout
+                android:id="@+id/btn_followed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_follow"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_follow_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_fans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_fans"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fans_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_live"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_live_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_send"
+                        android:textColor="@color/hh_color_a"
+                        android:textSize="@dimen/t12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_send_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/hh_color_h"
+                        android:textSize="@dimen/t12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/t20dp"
+            android:background="@color/hh_color_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_due_control"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t44dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/btn_follow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/hh_userlist_unfollow"
+                    android:drawablePadding="@dimen/t3dp"
+                    android:text="@string/user_follow"
+                    android:textColor="@color/hh_color_a"
+                    android:textSize="@dimen/t12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/t3dp"
+                android:layout_height="@dimen/t3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_bolt" />
+
+            <RelativeLayout
+                android:id="@+id/btn_private_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_private_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/hh_profile_unfollow"
+                    android:drawablePadding="@dimen/t3dp"
+                    android:text="@string/user_private_message"
+                    android:textSize="@dimen/t12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/t3dp"
+                android:layout_height="@dimen/t3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_bolt" />
+
+            <RelativeLayout
+                android:id="@+id/btn_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/hh_profile_unblock"
+                    android:drawablePadding="@dimen/t3dp"
+                    android:text="@string/user_black"
+                    android:textColor="@color/hh_color_a"
+                    android:textSize="@dimen/t12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+       <LinearLayout
+            android:id="@+id/ll_due_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t130dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/btn_call_stop"
+                android:layout_width="@dimen/t42dp"
+                android:layout_height="@dimen/t42dp"
+                android:background="@drawable/bg_call_end"
+                android:scaleType="centerInside"
+                android:src="@drawable/hh_profile_hangup" />
+
+            <TextView
+                android:id="@+id/tv_call_stop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t6dp"
+                android:text="@string/due_call_end_text"
+                android:textColor="@color/hh_color_a"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.base.widget.RoundFrameLayout>

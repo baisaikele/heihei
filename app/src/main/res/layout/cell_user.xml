@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.cell.UserCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t46dp" >
+
+        <ImageView 
+            android:id="@+id/btn_follow"
+            android:layout_width="@dimen/t30dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/hh_userlist_following"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btn_follow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.heihei.fragment.live.widget.AvatarImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/pm_user_head_size"
+                android:layout_height="@dimen/pm_user_head_size"
+                android:layout_marginLeft="@dimen/t10dp">
+            </com.heihei.fragment.live.widget.AvatarImageView>
+            
+            <TextView 
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:textColor="@color/hh_color_a"
+                android:textSize="@dimen/t14dp"
+                android:text=""/>
+            
+            <TextView 
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t7dp"
+                android:textColor="@color/hh_color_a"
+                android:textSize="10dp"
+                android:text="LV.1"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/hh_color_line" />
+
+</com.heihei.cell.UserCell>

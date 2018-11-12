@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.cell.HomeVideoCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_live_height"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:background="@drawable/shape_solid_1f2326_corner_18" >
+
+        <com.heihei.fragment.live.widget.AvatarImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/t36dp"
+            android:layout_height="@dimen/t36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/t12dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/tv_live"
+                android:layout_width="@dimen/t54dp"
+                android:layout_height="@dimen/t20dp"
+                android:background="@drawable/shape_tag_live" >
+                
+                <TextView
+                    android:id="@+id/tv_liveing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="直播"
+                    android:drawablePadding="@dimen/t5dp"
+                    android:textColor="@color/hh_color_g"
+                    android:textSize="@dimen/t10dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="54dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_tag_record"
+                android:gravity="center"
+                android:text="回放"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/t15dp"
+                android:text=""
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_marginRight="@dimen/t1dp"
+            android:layout_toLeftOf="@id/ll_right"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/hh_color_a"
+                    android:textSize="@dimen/t14dp" />
+
+                <ImageView
+                    android:id="@+id/iv_probate"
+                    android:layout_width="@dimen/t10dp"
+                    android:layout_height="@dimen/t10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/t3dp"
+                    android:layout_toRightOf="@id/tv_nickname"
+                    android:src="@drawable/hh_vip"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_username"
+                android:layout_marginTop="@dimen/t3dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/hh_color_a"
+                android:textSize="@dimen/t14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.heihei.cell.HomeVideoCell>

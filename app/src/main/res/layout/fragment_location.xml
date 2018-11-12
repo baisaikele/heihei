@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/hh_color_line" />
+
+    <RelativeLayout
+        android:id="@+id/btn_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t52dp" >
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="@dimen/t18dp"
+            android:layout_height="@dimen/t18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hh_mylocation_location_n" />
+
+        <TextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@id/img_location"
+            android:text="@string/user_location_fail"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        style="@style/tv_b_24"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="@string/user_withdrawals_declare" />
+
+    <RelativeLayout
+        android:id="@+id/btn_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/ali_pay_number" />
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:hint="@string/input_ali_pay_number"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingRight="@dimen/t15dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:imeOptions="actionNext"
+            android:hint="@string/input_name"
+            android:paddingRight="@dimen/t15dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/national_identifiers_number" />
+
+        <EditText
+            android:id="@+id/et_card"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:imeOptions="actionNext"
+            android:hint="@string/input_national_identifiers_number"
+            android:paddingRight="@dimen/t15dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t51dp" >
+
+        <TextView
+            style="@style/tv_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/phone_number" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:imeOptions="actionDone"
+            android:hint="@string/input_phone_number"
+            android:inputType="phone"
+            android:paddingRight="@dimen/t15dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@color/hh_color_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/btn_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="19dp"
+            android:paddingLeft="19dp"
+            android:paddingTop="19dp" >
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/btn_checkbox_selector" />
+
+            <TextView
+                style="@style/tv_b_24"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/t5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_agree" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_proxy"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="19dp"
+            android:text="@string/user_commission_cash_withdrawal_agreement" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="200dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_login_selector"
+            android:enabled="false"
+            android:text="@string/ifentifying"
+            android:textColor="@color/btn_login_text_color_selector"
+            android:textSize="@dimen/t16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

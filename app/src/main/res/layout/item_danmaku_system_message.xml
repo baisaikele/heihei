@@ -1,0 +1,17 @@
+<com.base.danmaku.DanmakuSystemMsgItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+    
+    <TextView 
+	    android:id="@+id/danmaku_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/t26dp"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:gravity="center"
+	    android:textColor="@color/hh_color_g"
+	    android:textSize="14dp"/>
+</com.base.danmaku.DanmakuSystemMsgItemView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.fragment.live.widget.GiftCellView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/hh_color_e"
+            android:textSize="12dp" />
+
+        <com.facebook.fresco.FrescoImageView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_nickname"
+            android:layout_marginTop="2dp"
+            fresco:roundAsCircle="false">
+        </com.facebook.fresco.FrescoImageView>
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_gift_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_gift_icon"
+            android:text=""
+            android:textColor="@color/hh_color_a"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_gift_name"
+            android:layout_below="@id/tv_gift_name"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <!-- <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/hh_color_a"
+                android:textColor="#ffa5ff93"
+                android:textSize="@dimen/gift_count_font_size"
+                android:text="X"
+                 /> -->
+            
+            <com.heihei.fragment.live.widget.GiftNumberView
+                android:id="@+id/giftNumberView"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+                
+            </com.heihei.fragment.live.widget.GiftNumberView>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.heihei.fragment.live.widget.GiftCellView>

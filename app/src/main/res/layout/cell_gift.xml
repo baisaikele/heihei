@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t80dp" >
+
+    <View
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#E5313539" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_alignParentBottom="true"
+        android:background="#E5313539" />
+
+    <View 
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gift_item"/>
+    
+    <com.facebook.fresco.FrescoImageView
+        android:id="@+id/iv_gift_icon"
+        android:layout_width="@dimen/t39dp"
+        android:layout_height="@dimen/t39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/t8dp" >
+    </com.facebook.fresco.FrescoImageView>
+
+    <TextView
+        android:id="@+id/tv_gift_name"
+        style="@style/tv_a_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_gift_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="大屌" />
+
+    <TextView
+        android:id="@+id/tv_diamond_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gift_name"
+        android:layout_centerHorizontal="true"
+        android:text="100钻"
+        android:textColor="@color/hh_color_a"
+        android:textSize="@dimen/t8dp" />
+
+    <TextView
+        android:id="@+id/tv_express_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gift_name"
+        android:layout_centerHorizontal="true"
+        android:text="+10经验"
+        android:textColor="@color/hh_color_g"
+        android:textSize="@dimen/t8dp" />
+    
+</RelativeLayout>

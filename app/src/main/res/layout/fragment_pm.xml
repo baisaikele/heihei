@@ -1,0 +1,300 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/full_transparent"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context="com.heihei.fragment.PMFragment" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/full_transparent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <!-- 铃铛 -->
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/full_transparent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/btn_message"
+                android:layout_width="@dimen/t44dp"
+                android:layout_height="@dimen/t44dp"
+                android:background="@color/full_transparent" >
+
+                <ImageView
+                    android:id="@+id/iv_bell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/hh_live_notification" />
+
+                <ImageView
+                    android:id="@+id/tv_home_bell_sum"
+                    android:layout_width="@dimen/t5dp"
+                    android:layout_height="@dimen/t5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/t9dp"
+                    android:layout_marginTop="@dimen/t9dp"
+                    android:src="@drawable/bg_round_read"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 发起直播 -->
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/full_transparent" >
+
+            <TextView
+                android:id="@+id/tv_right"
+                style="@style/TitlebarTextBtnStyle"
+                android:text="@string/user_create_live"
+                android:textColor="#ffcdffc2"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/full_transparent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/hh_color_a"
+                android:textSize="@dimen/t17dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_loading_top"
+            android:layout_width="@dimen/t107dp"
+            android:layout_height="@dimen/t102dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/t10dp"
+            android:background="@drawable/shape_bg_live_userinfo"
+            android:visibility="gone" >
+
+            <com.base.widget.CircleRotateProgressBar
+                android:id="@+id/progress_loading"
+                android:layout_width="@dimen/t50dp"
+                android:layout_height="@dimen/t50dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/other_user_info_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/btn_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/t15dp"
+                    android:text="@string/user_add_follow"
+                    android:textColor="@color/hh_color_g"
+                    android:textSize="@dimen/t12dp" />
+
+                <TextView
+                    android:id="@+id/btn_unfollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/t15dp"
+                    android:text="@string/user_followed"
+                    android:textColor="@color/hh_color_c"
+                    android:textSize="@dimen/t12dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/other_user_info"
+                    layout="@layout/cell_pm_userinfo" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_other_sound"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_marginTop="@dimen/t6dp"
+                android:src="@drawable/hh_live_speak_male"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/other_gift_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t11dp"
+                layout="@layout/cell_audience_gift_three" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t100dp"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_title_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/live_topic"
+                android:textColor="#ff979ba4"
+                android:textSize="@dimen/t14dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_title_change"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/hh_chat_question"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_choose_topic"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/hh_chat_question"
+                android:visibility="gone" />
+
+            <com.heihei.fragment.live.widget.PMLoadingTextView
+                android:id="@+id/tv_loading_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_load_fail_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pm_load_fail"
+                android:textColor="@color/hh_color_g"
+                android:textSize="@dimen/t14dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/my_user_info_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/my_gift_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/cell_audience_gift_three" />
+
+            <ImageView
+                android:id="@+id/iv_my_sound"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_marginBottom="@dimen/t6dp"
+                android:layout_marginTop="@dimen/t8dp"
+                android:src="@drawable/hh_live_speak_b_female"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t10dp" >
+
+                <include
+                    android:id="@+id/my_user_info"
+                    layout="@layout/cell_pm_userinfo" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/my_user_info" >
+
+                    <ImageView
+                        android:id="@+id/btn_gift"
+                        android:layout_width="@dimen/t36dp"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_btn_live_bottom"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_gift_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/my_user_info" >
+
+                    <FrameLayout
+                        android:layout_width="@dimen/t36dp"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/full_transparent" >
+
+                        <ImageView
+                            android:id="@+id/btn_close"
+                            android:layout_width="@dimen/t36dp"
+                            android:layout_height="@dimen/t36dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/bg_btn_live_bottom"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/btn_close_selector" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

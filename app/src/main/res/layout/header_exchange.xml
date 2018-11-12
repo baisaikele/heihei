@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/hh_color_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/hh_color_d" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:text="@string/user_account_balance"
+            android:textColor="@color/hh_color_a"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="0"
+            android:textColor="@color/hh_color_h"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="@string/user_account_bill"
+            android:textColor="@color/hh_color_a"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/hh_color_sec_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/padding_30px"
+        android:text="@string/frances"
+        android:textColor="@color/hh_color_b"
+        android:textSize="10dp" />
+
+</LinearLayout>

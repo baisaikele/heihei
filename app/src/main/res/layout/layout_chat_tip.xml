@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.widget.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text_item_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_g"
+    diy:corner_radius_bottomleft="8dp"
+    diy:corner_radius_bottomright="8dp"
+    diy:corner_radius_topleft="0dp"
+    diy:corner_radius_topright="0dp" >
+
+    <LinearLayout
+        android:layout_width="@dimen/t173dp"
+        android:layout_height="@dimen/t35dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tip"
+            style="@style/tv_d_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/t4dp"
+            android:singleLine="true"
+            android:text="正在连接" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_d_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/hh_profile_call"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/t6dp"
+            android:singleLine="true"
+            android:text="正在连接" />
+        
+    </LinearLayout>
+
+</com.base.widget.RoundFrameLayout>

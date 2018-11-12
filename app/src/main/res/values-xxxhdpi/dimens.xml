@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- 大于1080P的屏幕 4px=1dp 如 4K屏幕、1440*2560 -->
+    <dimen name="line_height">0.5dp</dimen>
+  <dimen name="msg_scroll_item_marginTop">7dp</dimen>
+</resources>

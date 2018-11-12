@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/titlebar"
+        layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.base.widget.cobe.PtrListLayout
+            android:id="@+id/ptrlistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.base.widget.swipemenulistview.SwipeMenuListView
+                android:id="@+id/listview"
+                style="@style/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.base.widget.swipemenulistview.SwipeMenuListView>
+        </com.base.widget.cobe.PtrListLayout>
+
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_data_null"
+                android:layout_width="@dimen/t110dp"
+                android:layout_height="@dimen/t155dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/t140dp"
+                android:background="@drawable/hh_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_data_null"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/t15dp"
+                android:text="@string/user_mylive_null"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t14dp" >
+            </TextView>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

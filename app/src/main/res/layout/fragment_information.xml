@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_danmu_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <com.base.danmaku.DanmakuView
+            android:id="@+id/danmakuview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </com.base.danmaku.DanmakuView>
+
+        <ImageView
+            android:id="@+id/iv_live_righttip"
+            android:layout_width="@dimen/t128dp"
+            android:layout_height="@dimen/t35dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="@dimen/t30dp"
+            android:src="@drawable/hh_live_righttip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_scroll_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <com.base.widget.LiveFreeScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+            android:layout_marginBottom="@dimen/t8dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/chat_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.base.widget.LiveFreeScrollView>
+
+        <ImageView
+            android:id="@+id/iv_live_lefttip"
+            android:layout_width="@dimen/t128dp"
+            android:layout_height="@dimen/t35dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/t30dp"
+            android:src="@drawable/hh_live_lefttip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

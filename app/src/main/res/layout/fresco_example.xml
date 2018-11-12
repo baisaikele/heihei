@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    	扩展属性需要手动导入  xmlns:fresco="http://schemas.android.com/apk/res-auto" 
+    	"fresco" 可改
+    -->
+
+    <com.facebook.fresco.FrescoImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        fresco:fadeDuration="300"
+        fresco:viewAspectRatio="0.666"
+        fresco:actualImageScaleType="FIT_CENTER"
+        fresco:backgroundImage="@color/hh_color_g"
+        
+        fresco:placeholderImage="@drawable/defaulthead"
+        fresco:placeholderImageScaleType="FIT_CENTER"
+        
+        fresco:retryImage="@drawable/defaulthead"
+        fresco:retryImageScaleType="FIT_CENTER"
+        
+        fresco:failureImage="@drawable/defaulthead"
+        fresco:failureImageScaleType="FIT_CENTER"
+                
+        fresco:progressBarImage="@drawable/defaulthead"
+        fresco:progressBarImageScaleType="FIT_CENTER"
+        fresco:progressBarAutoRotateInterval="1000"
+        
+        fresco:overlayImage="@drawable/defaulthead"
+        fresco:pressedStateOverlayImage="@drawable/defaulthead"
+        
+        fresco:roundAsCircle="false"
+        fresco:roundedCornerRadius="50dp"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="false"
+        fresco:roundBottomRight="true"
+        fresco:roundBottomLeft="false"
+        fresco:roundWithOverlayColor="#99000000"
+        fresco:roundingBorderWidth="5dp"
+        fresco:roundingBorderColor="@color/hh_color_g"
+         />
+
+    <!--
+    	fadeDuration 						加载图片动画时间 图片从无到有的过度时间
+    	viewAspectRatio						图片宽高比例=宽/高
+    	actualImageScaleType				实际加载图片的缩放类型 默认都是centercrop 没有特殊情况不用动
+    	backgroundImage						背景图片
+    	
+    	placeholderImage					占位图  drawable、color
+    	placeholderImageScaleType			占位图缩放类型 ScalingUtils.ScaleType.FIT_CENTER
+    	
+    	retryImage							点击重新加载的图片，图片加载失败时显示
+    	retryImageScaleType					点击重新加载图缩放类型 ScalingUtils.ScaleType.FIT_CENTER
+    	
+    	failureImage						失败图
+    	failureImageScaleType				失败图缩放类型 ScalingUtils.ScaleType.FIT_CENTER
+    	
+    	progressBarImage					进度条
+    	progressBarImageScaleType			进度条缩放类型
+    	progressBarAutoRotateInterval		自动旋转间隔
+    	
+    	overlayImage						叠加图
+    	pressedStateOverlayImage			叠加图-手指按下时
+    	
+    	roundAsCircle						true 圆形，默认flase
+    	roundedCornerRadius					圆角半径（四角） roundAsCircle=false时
+    	roundTopLeft						圆角开关 左上 如果预览中没有效果 就在真机中查看效果
+        roundTopRight						圆角开关 右上
+        roundBottomRight					圆角开关 右下
+        roundBottomLeft						圆角开关 左下
+        roundWithOverlayColor				圆形覆盖颜色
+        roundingBorderWidth					描边宽度
+        roundingBorderColor 				描边颜色
+    -->
+
+</LinearLayout>

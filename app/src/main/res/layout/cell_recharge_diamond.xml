@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heihei.cell.RechargeDiamondCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp" >
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:background="@drawable/btn_login_selector"
+            android:textColor="@color/btn_login_text_color_selector"
+            android:textSize="@dimen/t14dp"
+            android:text="￥3" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            >
+            <ImageView 
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:src="@drawable/hh_charge_diamond"
+                />
+            <TextView 
+                android:id="@+id/tv_diamond_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/hh_color_a"
+                android:textSize="15dp"
+                android:text="99"/>
+            
+            <TextView 
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/hh_color_b"
+                android:textSize="12dp"
+                android:text="@string/user_account_pay_add_bore"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:layout_marginLeft="14dp"
+        android:background="@color/hh_color_line" />
+
+</com.heihei.cell.RechargeDiamondCell>

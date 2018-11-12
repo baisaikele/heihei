@@ -1,0 +1,16 @@
+<com.base.danmaku.DanmakuColorBgItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+	<TextView 
+	    android:id="@+id/danmaku_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/t26dp"
+	    android:background="@drawable/bg_danmaku_male"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:gravity="center"
+	    android:textColor="@android:color/black"
+	    android:textSize="14dp"/>
+</com.base.danmaku.DanmakuColorBgItemView>

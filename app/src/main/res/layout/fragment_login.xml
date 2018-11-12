@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t54dp"
+        android:paddingLeft="@dimen/t15dp"
+        android:paddingRight="@dimen/t15dp" >
+
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="@dimen/t85dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/login_identifying_code"
+            android:textColor="@color/btn_code_text_color_selector"
+            android:textSize="@dimen/t14dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_code"
+            android:hint="@string/please_input_phone_number"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_line_height"
+        android:layout_marginLeft="15dp"
+        android:background="@color/hh_color_line" />
+
+    <EditText
+        android:id="@+id/et_code"
+        style="@style/EditText_a"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t54dp"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:hint="@string/please_input_identifying_code"
+        android:inputType="numberSigned"
+        android:maxLength="6" />
+    
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_line_height"
+        android:layout_marginLeft="15dp"
+        android:background="@color/hh_color_line" />
+	
+	<TextView 
+	    style="@style/tv_b_24"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/use_identifying_code_login"/>
+	
+	<Button 
+	    android:id="@+id/btn_login"
+	    android:layout_width="@dimen/t200dp"
+	    android:layout_height="@dimen/t44dp"
+	    android:background="@drawable/btn_login_selector"
+	    android:layout_marginTop="@dimen/t43dp"
+	    android:layout_gravity="center_horizontal"
+	    android:textColor="@color/btn_login_text_color_selector"
+	    android:textSize="@dimen/t16dp"
+	    android:text="@string/login"/>
+</LinearLayout>

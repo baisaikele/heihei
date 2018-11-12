@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.wmlives.heihei"
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 26
     }
 
     buildTypes {

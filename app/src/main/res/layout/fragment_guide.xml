@@ -47,6 +47,7 @@
         android:orientation="horizontal" >
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/btn_login"
             android:layout_width="@dimen/t139dp"
             android:layout_height="@dimen/t51dp"

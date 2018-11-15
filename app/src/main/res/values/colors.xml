@@ -35,6 +35,8 @@
 
     <!-- 分割线 -->
     <color name="hh_color_line">#ff313539</color>
+    <!-- 分割线弹窗 -->
+    <color name="hh_color_fg">#F2F2F2</color>
     <!-- 特殊背景色 -->
     <color name="hh_color_sec_bg">#33000000</color>
 

@@ -13,7 +13,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <RelativeLayout
         android:id="@+id/btn_notice"
@@ -21,7 +21,7 @@
         android:layout_height="@dimen/t52dp" >
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -41,7 +41,7 @@
             android:layout_height="@dimen/line_height"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -50,7 +50,7 @@
         android:layout_height="@dimen/t52dp" >
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -70,7 +70,7 @@
             android:layout_height="@dimen/line_height"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -79,7 +79,7 @@
         android:layout_height="@dimen/t52dp" >
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -99,7 +99,7 @@
             android:layout_height="@dimen/line_height"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <RelativeLayout

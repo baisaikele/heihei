@@ -18,7 +18,7 @@
             android:paddingLeft="@dimen/t10dp"
             android:paddingRight="@dimen/t10dp"
             android:gravity="center"
-            android:textColor="#ffb2ff99"
+            android:textColor="#1D9AFF"
             android:textSize="@dimen/t12dp"
             android:text="@string/user_cancel_black"/>
         
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/t10dp"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_hszt"
                 android:textSize="@dimen/t14dp"
                 android:text=""/>
             

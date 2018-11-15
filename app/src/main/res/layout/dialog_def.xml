@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/hh_color_d"
+        android:background="@color/hh_color_fg"
         android:clickable="true"
         android:orientation="vertical" >
 
@@ -28,19 +28,19 @@
                 android:gravity="center_horizontal"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_c"
                 android:textSize="15sp" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_tbb" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:background="@color/hh_color_d"
+            android:background="@color/hh_color_fg"
             android:divider="@drawable/shape_default_divider"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
@@ -60,16 +60,16 @@
                     android:background="@drawable/tipdialog_btn_bg_selector"
                     android:gravity="center"
                     android:text="取消"
-                    android:textColor="@color/hh_color_g"
+                    android:textColor="@color/hh_color_ls"
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!--
-                 <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:background="@color/gray_divider_line" />
-            -->
+
+            <!--<View-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/hh_color_65" />-->
+
 
             <LinearLayout
                 android:id="@+id/ok"
@@ -85,7 +85,7 @@
                     android:background="@drawable/tipdialog_btn_bg_selector"
                     android:gravity="center"
                     android:text="确定"
-                    android:textColor="@color/hh_color_g"
+                    android:textColor="@color/hh_color_ls"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>

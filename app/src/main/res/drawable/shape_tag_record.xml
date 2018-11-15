@@ -3,9 +3,6 @@
     android:shape="rectangle" >
 	<corners android:radius="100dp"/>
 	
-	<solid android:color="@color/full_transparent"/>
-	
-	<stroke android:width="@dimen/line_height"
-	    android:color="@color/hh_color_b"/>
-	
+	<solid android:color="#ffffca00"/>
+
 </shape>

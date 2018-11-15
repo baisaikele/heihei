@@ -58,7 +58,7 @@
                 android:id="@+id/tv_right"
                 style="@style/TitlebarTextBtnStyle"
                 android:text="@string/user_create_live"
-                android:textColor="@color/hh_color_g"
+                android:textColor="#ff1d9aff"
                 android:textSize="@dimen/t14dp"
                 android:visibility="visible" />
         </LinearLayout>
@@ -77,8 +77,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/title"
-                android:textColor="@color/hh_color_a"
-                android:textSize="@dimen/t17dp" />
+                android:textColor="#ff1d9aff"
+                android:textSize="20sp" />
         </LinearLayout>
     </RelativeLayout>
 

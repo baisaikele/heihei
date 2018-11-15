@@ -15,37 +15,37 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:windowBackground">@color/full_transparent</item>  
+        <item name="android:windowBackground">@color/full_transparent</item>
     	<item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
     </style>
-    
+
     <!-- Application theme. -->
     <style name="AppNoAnimationTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:windowBackground">@color/full_transparent</item>  
+        <item name="android:windowBackground">@color/full_transparent</item>
     	<item name="android:windowNoTitle">true</item>
     </style>
 
-    <style name="activityAnimation" parent="@android:style/Animation">  
-        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>  
-        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>  
-        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>  
-        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>  
-    </style> 
-    
-    <style name="activityAnimationPart" parent="@android:style/Animation">  
-        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>  
-        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>  
-        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>  
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
     </style>
-    
+
+    <style name="activityAnimationPart" parent="@android:style/Animation">
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
     <style name="ToastAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/top_in</item>
         <item name="android:windowExitAnimation">@anim/top_out</item>
     </style>
-    
-    
+
+
     <style name="pull_loading_small">
         <item name="android:indeterminateDuration">500</item>
         <item name="android:indeterminateDrawable">@drawable/loading_anim</item>
@@ -79,7 +79,7 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
     </style>
-    
+
     <style name="ActionSheet" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -103,7 +103,7 @@
         <item name="android:windowAnimationStyle">@style/ActionSheetAnimation</item>
         <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
     </style>
-    
+
     <!-- listview -->
     <style name="listview">
         <item name="android:background">@null</item>
@@ -146,164 +146,175 @@
         <item name="android:paddingRight">10dp</item>
         <item name="android:background">@drawable/btn_bg_selector</item>
     </style>
-    
+
     <style name="tv_a_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_a_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_a_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_a_30">
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_a_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_a_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-    
+
     <style name="tv_b_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
     </style>
-    
+
     <style name="tv_b_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
     </style>
-    
+
     <style name="tv_b_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
     </style>
-    
+
+    <style name="tv_b_27">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/hh_color_bb</item>
+    </style>
+
+
     <style name="tv_b_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
     </style>
-    
+
     <style name="tv_b_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
     </style>
-    
-    
+
+
     <style name="tv_c_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_c</item>
     </style>
-    
+
     <style name="tv_c_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_c</item>
     </style>
-    
+
+    <style name="tv_c_25">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/hh_color_tbb</item>
+    </style>
+
     <style name="tv_c_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_c</item>
     </style>
-    
+
     <style name="tv_c_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_c</item>
     </style>
-    
+
     <style name="tv_c_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_c</item>
     </style>
-    
-    
+
+
     <style name="tv_d_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_d</item>
     </style>
-    
+
     <style name="tv_d_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_d</item>
     </style>
-    
+
     <style name="tv_d_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_d</item>
     </style>
-    
+
     <style name="tv_d_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_d</item>
     </style>
-    
+
     <style name="tv_d_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_d</item>
     </style>
-    
+
     <style name="tv_e_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_e</item>
     </style>
-    
+
     <style name="tv_e_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_e</item>
     </style>
-    
+
     <style name="tv_e_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_e</item>
     </style>
-    
+
     <style name="tv_e_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_e</item>
     </style>
-    
+
     <style name="tv_e_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_e</item>
     </style>
-    
+
     <style name="tv_g_20">
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_g</item>
     </style>
-    
+
     <style name="tv_g_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_g</item>
     </style>
-    
+
     <style name="tv_g_28">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/hh_color_g</item>
     </style>
-    
+
     <style name="tv_g_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_g</item>
     </style>
-    
+
     <style name="tv_g_34">
         <item name="android:textSize">17dp</item>
         <item name="android:textColor">@color/hh_color_g</item>
     </style>
-    
+
     <style name="EditText_a">
         <item name="android:background">@color/full_transparent</item>
         <item name="android:gravity">left|center</item>
@@ -312,5 +323,14 @@
         <item name="android:textSize">15dp</item>
         <item name="android:textCursorDrawable">@drawable/text_cursor_drawable</item>
     </style>
-    
+
+
+    <style name="EditText_e">
+        <item name="android:background">@color/full_transparent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/hh_color_bl</item>
+        <item name="android:textColorHint">@color/hh_color_c</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawable</item>
+    </style>
 </resources>

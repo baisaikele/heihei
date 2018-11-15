@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_bg"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/titlebar"
@@ -12,17 +12,18 @@
     <ScrollView
         style="@style/listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/t10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="@dimen/t15dp"
-            android:paddingRight="@dimen/t15dp" >
+            android:paddingRight="@dimen/t15dp">
 
             <TextView
-                style="@style/tv_b_28"
+                style="@style/tv_b_27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/t5dp"
@@ -30,11 +31,11 @@
 
             <EditText
                 android:id="@+id/et_nickname"
-                style="@style/EditText_a"
+                style="@style/EditText_e"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/t38dp"
                 android:layout_marginTop="@dimen/t10dp"
-                android:background="@drawable/shape_solid_1b1e20_corner_4"
+                android:background="@drawable/shape_edit_bj"
                 android:hint="@string/user_input_nick_name"
                 android:paddingLeft="@dimen/t15dp"
                 android:paddingRight="@dimen/t15dp" />
@@ -42,39 +43,38 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/t16dp" >
+                android:layout_marginTop="@dimen/t16dp">
 
                 <TextView
-                    style="@style/tv_b_28"
+                    style="@style/tv_b_27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/user_sex" />
 
                 <TextView
                     android:id="@+id/tv_edit_information"
+                    style="@style/tv_c_25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="@string/user_sex_information"
                     android:layout_marginTop="@dimen/t1dp"
-                    style="@style/tv_c_24"
-                     />
+                    android:text="@string/user_sex_information" />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/t43dp"
                 android:layout_marginTop="@dimen/t10dp"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_male"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/t7dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_sex_male_selector"
                     android:text="@string/user_sex_boy"
-                    android:layout_marginRight="@dimen/t7dp"
                     android:textColor="@color/btn_sex_text_color_selector"
                     android:textSize="@dimen/t15dp" />
 
@@ -91,18 +91,18 @@
             </LinearLayout>
 
             <TextView
-                style="@style/tv_b_28"
+                style="@style/tv_b_27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/t16dp"
                 android:text="@string/user_brithday" />
-<!-- 生日 -->
+            <!-- 生日 -->
             <RelativeLayout
                 android:id="@+id/btn_birthday"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/t52dp"
                 android:layout_marginTop="@dimen/t10dp"
-                android:background="@drawable/shape_solid_1b1e20_corner_4" >
+                android:background="@drawable/shape_edit_bj">
 
                 <TextView
                     android:id="@+id/tv_birthday_tip"
@@ -111,7 +111,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/t15dp"
                     android:text="@string/user_choice_brithday"
-                    android:textColor="@color/hh_color_c"
+                    android:textColor="@color/hh_color_tbb"
                     android:textSize="@dimen/t16dp" />
 
                 <ImageView
@@ -121,7 +121,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="@dimen/t15dp"
-                    android:src="@drawable/hh_me_enter" />
+                    android:src="@drawable/hh_me_enter_s" />
 
                 <RelativeLayout
                     android:id="@+id/rl_birthday_tip"
@@ -131,15 +131,15 @@
                     android:layout_marginLeft="@dimen/t15dp"
                     android:layout_marginRight="@dimen/t3dp"
                     android:layout_toLeftOf="@id/iv_birthday_right_arrow"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
                     <com.heihei.fragment.live.widget.AvatarImageView
                         android:id="@+id/iv_constellation"
                         android:layout_width="@dimen/t36dp"
                         android:layout_height="@dimen/t36dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_launcher"
-                        android:layout_centerVertical="true" />
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_launcher" />
 
                     <TextView
                         android:id="@+id/tv_birthday"
@@ -147,25 +147,25 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:text="1992-08-05  狮子座"
-                        android:textColor="@color/hh_color_a"
+                        android:textColor="@color/hh_color_ls"
                         android:textSize="@dimen/t15dp" />
                 </RelativeLayout>
             </RelativeLayout>
 
-             <TextView
+            <TextView
                 android:id="@+id/tv_city_title"
-                style="@style/tv_b_28"
+                style="@style/tv_b_27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/t16dp"
                 android:text="@string/user_city" />
-			<!-- 定位城市 -->
+            <!-- 定位城市 -->
             <RelativeLayout
                 android:id="@+id/btn_city"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/t52dp"
                 android:layout_marginTop="@dimen/t10dp"
-                android:background="@drawable/shape_solid_1b1e20_corner_4" >
+                android:background="@drawable/shape_edit_bj">
 
                 <TextView
                     android:id="@+id/tv_city_tip"
@@ -174,7 +174,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/t15dp"
                     android:text="@string/user_city_location"
-                    android:textColor="@color/hh_color_c"
+                    android:textColor="@color/hh_color_tbb"
                     android:textSize="@dimen/t15dp" />
 
                 <ImageView
@@ -184,18 +184,18 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="@dimen/t15dp"
-                    android:src="@drawable/hh_me_enter" />
+                    android:src="@drawable/hh_me_enter_s" />
 
                 <RelativeLayout
                     android:id="@+id/rl_city_tip"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/t15dp"
                     android:layout_marginRight="@dimen/t3dp"
                     android:layout_toLeftOf="@id/iv_city_right_arrow"
-                    android:layout_centerVertical="true"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
                     <ImageView
                         android:id="@+id/iv_city"
@@ -211,14 +211,14 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:text="北京"
-                        android:textColor="@color/hh_color_a"
+                        android:textColor="@color/hh_color_ls"
                         android:textSize="@dimen/t15dp" />
                 </RelativeLayout>
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/tv_sign_title"
-                style="@style/tv_b_28"
+                style="@style/tv_b_27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/t16dp"
@@ -229,7 +229,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/t10dp"
-                android:background="@drawable/shape_solid_1b1e20_corner_4"
+                android:background="@drawable/shape_edit_bj"
                 android:gravity="left|top"
                 android:hint="@string/user_input_autograph"
                 android:minHeight="@dimen/t75dp"
@@ -238,7 +238,7 @@
                 android:paddingRight="@dimen/t15dp"
                 android:paddingTop="@dimen/t16dp"
                 android:textColor="@color/hh_color_a"
-                android:textColorHint="@color/hh_color_c"
+                android:textColorHint="@color/hh_color_tbb"
                 android:textCursorDrawable="@drawable/text_cursor_drawable"
                 android:textSize="@dimen/t15dp" />
 

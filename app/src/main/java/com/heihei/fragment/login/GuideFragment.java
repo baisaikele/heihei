@@ -20,10 +20,11 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import cn.sharesdk.facebook.Facebook;
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.sina.weibo.SinaWeibo;
 import cn.sharesdk.wechat.friends.Wechat;
 
 import com.base.host.BaseFragment;
@@ -144,7 +145,6 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 
 	@Override
 	public void onClick(View v) {
-		ShareSDK.initSDK(HostApplication.getInstance());
 		switch (v.getId()) {
 		case R.id.btn_login:
 			startFragment(LoginFragment.class, null);
@@ -158,16 +158,16 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 					ld.show();
 				}
 
-				authorize(new Wechat(getActivity()));
+				authorize(new Wechat());
 
 			} else
 				UIUtils.showToast(R.string.share_wechat_no_avliible);
 			break;
 		case R.id.btn_sina:
 			if (PackageUtils.isPackageInstalled(getContext(), PackageUtils.PKGName.PKGNAME_WEIBO))
-				authorize(new SinaWeibo(getActivity()));
+				authorize(new Facebook());
 			else
-				authorizeNotInstallWeiboClient(new SinaWeibo(getActivity()));
+				authorizeNotInstallWeiboClient(new Facebook());
 			break;
 		case R.id.tv_tip:
 			NavigationController.gotoWebView(getContext(), userPresent.getServiceTerms(), null);
@@ -286,7 +286,7 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 		// return;
 		// }
 		// }
-		plat.removeAccount();
+		plat.removeAccount(true);
 		plat.setPlatformActionListener(this);
 		plat.SSOSetting(false);
 		plat.authorize();
@@ -294,14 +294,13 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 	}
 
 	private void authorizeNotInstallWeiboClient(Platform plat) {
-		plat.removeAccount();
+		plat.removeAccount(true);
 		plat.setPlatformActionListener(this);
 		plat.SSOSetting(false);
 		plat.showUser(null);
 	}
 
 	public void onComplete(Platform platform, int action, HashMap<String, Object> res) {
-
 		if (getActivity() != null) {
 			getActivity().runOnUiThread(new Runnable() {
 
@@ -375,7 +374,7 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 	private void login(String plat, String openid, String token, String unionid) {
 		if (plat.equals(Wechat.NAME)) {
 			mUserPresent.loginByWechat(token, openid, unionid, loginResponse);
-		} else if (plat.equals(SinaWeibo.NAME)) {
+		} else if (plat.equals(Facebook.NAME)) {
 			mUserPresent.loginByWeibo(token, openid, unionid, loginResponse);
 		}
 	}
@@ -446,7 +445,6 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 			Log.i(TAG, "--------MSG_AUTH_COMPLETE-------");
 			break;
 		}
-		ShareSDK.stopSDK(getActivity());
 		return false;
 	}
 	// ------------------ShareSdk OpenLogin fuction---------------end

@@ -15,6 +15,7 @@ import com.heihei.model.msg.ActionMessageDispatcher;
 import com.heihei.model.msg.MessageDispatcher;
 import com.heihei.model.msg.due.DueMessageUtils;
 import com.heihei.scoket.MessageDistribute;
+import com.mob.MobSDK;
 import com.qiniu.pili.droid.rtcstreaming.RTCMediaStreamingManager;
 import com.qiniu.pili.droid.streaming.StreamingEnv;
 
@@ -40,6 +41,7 @@ public class HostApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 		mApplication = this;
+		MobSDK.init(this);
 		try {
 			AppLogic.init();
 			/** 推流SDK初始化 */

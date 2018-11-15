@@ -9,7 +9,6 @@ import org.json.JSONObject;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import cn.sharesdk.framework.authorize.f;
 
 import com.base.host.AppLogic;
 import com.base.http.ErrorCode;

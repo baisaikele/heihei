@@ -57,7 +57,7 @@ public class ShareDialog extends BaseDialog implements android.view.View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ShareSDK.initSDK(getContext(), "169277801c9a4");
+//        ShareSDK.initSDK(getContext(), "169277801c9a4");
         setContentView(R.layout.dialog_share);
         autoLoad_dialog_share();
         btn_wx.setOnClickListener(this);

@@ -4,12 +4,25 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_bg" >
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/full_transparent" >
-    </android.support.v4.view.ViewPager>
+
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginTop="108dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lead_c_01"
+        android:layout_width="@dimen/t210dp"
+        android:layout_height="@dimen/t210dp" />
+    <TextView
+        android:layout_marginTop="@dimen/t79dp"
+        android:layout_below="@id/iv"
+        android:layout_centerHorizontal="true"
+        android:text="Choose your login"
+        android:textColor="#ffbbbbbb"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:id="@+id/information"
@@ -25,6 +38,7 @@
 
         <TextView
             style="@style/tv_c_20"
+            android:textColor="#ffbbbbbb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login_proxy_tip_start" />
@@ -32,23 +46,24 @@
         <TextView
             android:id="@+id/tv_tip"
             style="@style/tv_c_20"
+            android:textColor="#1D9AFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login_proxy_tip_information" />
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="@dimen/t133dp"
+        android:layout_below="@id/iv"
         android:id="@+id/ll_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/information"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/t8dp"
         android:orientation="horizontal" >
 
         <LinearLayout
             android:visibility="gone"
-            android:id="@+id/btn_login"
             android:layout_width="@dimen/t139dp"
             android:layout_height="@dimen/t51dp"
             android:background="@drawable/shape_btn_login_stoke_white"
@@ -68,23 +83,32 @@
                 android:text="@string/login_mobile_phone" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/btn_wx"
-            android:layout_width="@dimen/t51dp"
-            android:layout_height="@dimen/t51dp"
-            android:layout_marginLeft="18dp"
-            android:background="@drawable/bg_login_wechat"
-            android:scaleType="centerInside"
-            android:src="@drawable/hh_register_wechat" />
 
         <ImageView
             android:id="@+id/btn_sina"
             android:layout_width="@dimen/t51dp"
             android:layout_height="@dimen/t51dp"
-            android:layout_marginLeft="18dp"
             android:background="@drawable/bg_login_weibo"
             android:scaleType="centerInside"
-            android:src="@drawable/hh_register_weibo" />
+            android:src="@drawable/hh_register_facebook" />
+
+        <ImageView
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/t51dp"
+            android:layout_height="@dimen/t51dp"
+            android:layout_marginLeft="44dp"
+            android:background="@drawable/bg_login_weibo"
+            android:scaleType="centerInside"
+            android:src="@drawable/hh_register_twitter" />
+        <ImageView
+            android:id="@+id/btn_wx"
+            android:layout_marginLeft="44dp"
+            android:layout_width="@dimen/t51dp"
+            android:layout_height="@dimen/t51dp"
+            android:background="@drawable/bg_login_wechat"
+            android:scaleType="centerInside"
+            android:src="@drawable/hh_register_wechat" />
+
     </LinearLayout>
 
     <com.base.widget.IndicationView

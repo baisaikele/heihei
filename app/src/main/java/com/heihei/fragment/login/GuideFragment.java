@@ -54,10 +54,9 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 
 	private String TAG = "GuideFragment";
 	// ----------------R.layout.fragment_guide-------------Start
-	private android.support.v4.view.ViewPager viewpager;
 	private TextView tv_tip;
 	private LinearLayout ll_buttons;
-	private LinearLayout btn_login;
+	private View btn_login;
 	private ImageView btn_wx;
 	private ImageView btn_sina;
 	private com.base.widget.IndicationView indicator;
@@ -66,12 +65,11 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 
 	public void autoLoad_fragment_guide() {
 
-		viewpager = (android.support.v4.view.ViewPager) findViewById(R.id.viewpager);
 		tv_tip = (TextView) findViewById(R.id.tv_tip);
 		tv_tip.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG); // 下划线
 		tv_tip.getPaint().setAntiAlias(true);// 抗锯齿
 		ll_buttons = (LinearLayout) findViewById(R.id.ll_buttons);
-		btn_login = (LinearLayout) findViewById(R.id.btn_login);
+		btn_login =  findViewById(R.id.btn_login);
 		btn_wx = (ImageView) findViewById(R.id.btn_wx);
 		btn_sina = (ImageView) findViewById(R.id.btn_sina);
 		indicator = (com.base.widget.IndicationView) findViewById(R.id.indicator);
@@ -92,35 +90,12 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 		tv_tip.setOnClickListener(this);
 	}
 
-	private int[] res = new int[] { R.drawable.lead_a_01, R.drawable.lead_b_01, R.drawable.lead_c_01,
-			R.drawable.lead_d_01 };
-
 	@Override
 	protected void refresh() {
 
 		UserMgr.getInstance().loadLoginUser();
 
-		indicator.setCount(res.length);
-		indicator.setSelecetdItem(0);
 
-		viewpager.setAdapter(new ImageAdapter());
-		viewpager.addOnPageChangeListener(new OnPageChangeListener() {
-
-			@Override
-			public void onPageSelected(int arg0) {
-				indicator.setSelecetdItem(arg0);
-			}
-
-			@Override
-			public void onPageScrolled(int arg0, float arg1, int arg2) {
-
-			}
-
-			@Override
-			public void onPageScrollStateChanged(int arg0) {
-
-			}
-		});
 
 		if (UserMgr.getInstance().isLogined()) {
 			if (UserMgr.getInstance().isNeedEditInfo()) {
@@ -179,14 +154,7 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 	@Override
 	public void onDestroyView() {
 		super.onDestroyView();
-		int count = viewpager.getChildCount();
-		for (int i = 0; i < count; i++) {
-			View child = viewpager.getChildAt(i);
-			if (child instanceof ImageView) {
-				((ImageView) child).setBackgroundDrawable(null);
-			}
-		}
-		viewpager.removeAllViews();
+
 	}
 
 	@Override
@@ -205,18 +173,6 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 	private void tick() {
 		mHandler.removeMessages(0);
 
-		if (viewpager == null) {
-			return;
-		}
-
-		int index = viewpager.getCurrentItem();
-		index++;
-		if (index >= res.length) {
-			index = 0;
-			return;
-		}
-
-		viewpager.setCurrentItem(index, true);
 
 		if (!isDetached()) {
 			Message msg = Message.obtain();
@@ -239,40 +195,6 @@ public class GuideFragment extends BaseFragment implements OnClickListener, Call
 			}
 		}
 
-	}
-
-	class ImageAdapter extends PagerAdapter {
-
-		@Override
-		public int getCount() {
-			return res.length;
-		}
-
-		@Override
-		public void destroyItem(ViewGroup container, int position, Object object) {
-			// super.destroyItem(container, position, object);
-			if (object instanceof ImageView) {
-				((ImageView) object).setBackgroundDrawable(null);
-				container.removeView((View) object);
-			}
-
-		}
-
-		@Override
-		public Object instantiateItem(ViewGroup container, int position) {
-			ImageView view = new ImageView(getContext());
-			view.setScaleType(ScaleType.FIT_XY);
-			view.setBackgroundDrawable(getResources().getDrawable(res[position]));
-			ViewGroup.LayoutParams parmas = new ViewGroup.LayoutParams(-1, -1);
-			container.addView(view, parmas);
-			return view;
-		}
-
-		@Override
-		public boolean isViewFromObject(View arg0, Object arg1) {
-			// TODO Auto-generated method stub
-			return arg0 == arg1;
-		}
 	}
 
 	// ------------------ShareSdk OpenLogin fuction---------------start

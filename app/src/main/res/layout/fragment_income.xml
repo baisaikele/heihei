@@ -13,7 +13,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="80"
-                android:textColor="#fffaec81"
+                android:textColor="#FF9F00"
                 android:textSize="@dimen/t30dp" />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:layout_marginBottom="2dp"
                 android:layout_marginLeft="2dp"
                 android:text="@string/user_account_bill"
-                android:textColor="#ffa5acb2"
+                android:textColor="#666666"
                 android:textSize="14dp" />
         </LinearLayout>
     </RelativeLayout>
@@ -48,7 +48,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="#b3f99b"
+                android:textColor="#1D9AFF"
                 android:textSize="@dimen/t48dp" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:layout_marginLeft="@dimen/t4dp"
                 android:layout_toRightOf="@id/tv_money"
                 android:text="@string/money"
-                android:textColor="#ffb3bdc7"
+                android:textColor="#666666"
                 android:textSize="14dp" />
 
             <TextView
@@ -84,7 +84,7 @@
                 android:layout_below="@id/tv_money"
                 android:layout_centerHorizontal="true"
                 android:text="@string/cash_withdrawal_amount"
-                android:textColor="#ffa9b4b8"
+                android:textColor="#BBBBBB"
                 android:textSize="@dimen/t12dp" />
         </RelativeLayout>
     </RelativeLayout>
@@ -92,7 +92,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <Button
         android:id="@+id/btn_exchange"
@@ -111,7 +111,7 @@
         android:layout_height="42dp"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/t15dp"
-        android:background="@drawable/btn_login_selector"
+        android:background="@drawable/shape_dissmiss"
         android:text="@string/user_account_withdrawals"
         android:textColor="@color/btn_login_text_color_selector"
         android:textSize="16dp" />

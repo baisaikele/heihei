@@ -151,7 +151,10 @@
         <item name="android:textSize">10dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-
+    <style name="tv_a_21">
+    <item name="android:textSize">10dp</item>
+    <item name="android:textColor">@color/hh_color_c</item>
+    </style>
     <style name="tv_a_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
@@ -166,7 +169,10 @@
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
     </style>
-
+    <style name="tv_a_31">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/hh_color_hszt</item>
+    </style>
     <style name="tv_a_32">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/hh_color_a</item>
@@ -185,6 +191,10 @@
     <style name="tv_b_24">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_25">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#BBBBBB</item>
     </style>
 
     <style name="tv_b_28">

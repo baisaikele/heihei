@@ -25,7 +25,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/iv_icon"
             android:layout_marginLeft="@dimen/t12dp"
-            android:textColor="@color/hh_color_a"
+            android:textColor="@color/hh_color_hszt"
             android:textSize="@dimen/t15dp"
             android:text="@string/user_mine_live"
             />
@@ -55,5 +55,5 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
         android:layout_marginLeft="@dimen/t14dp"
-        android:background="@color/hh_color_line"/>
+        android:background="@color/hh_color_fg"/>
 </LinearLayout>

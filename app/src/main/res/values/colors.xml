@@ -33,7 +33,8 @@
     <!-- 黄色 -->
     <color name="hh_color_65">#ff656565</color>
 
-
+    <!-- ziti -->
+    <color name="hh_color_zts">#666666</color>
     <!-- 蓝色 -->
     <color name="hh_color_ls">#FF1D9AFF</color>
 

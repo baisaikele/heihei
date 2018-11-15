@@ -3,25 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_bg"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/titlebar"
-        layout="@layout/title_bar" >
-    </include>
+        layout="@layout/title_bar"></include>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <RelativeLayout
         android:id="@+id/btn_black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/t52dp" >
+        android:layout_height="@dimen/t52dp">
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -41,16 +40,16 @@
             android:layout_height="@dimen/line_height_1px"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/btn_clear_memory"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/t52dp" >
+        android:layout_height="@dimen/t52dp">
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -68,7 +67,7 @@
 
         <TextView
             android:id="@+id/tv_memory_size"
-            style="@style/tv_a_24"
+            style="@style/tv_b_25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -81,7 +80,7 @@
             android:layout_height="@dimen/line_height_1px"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <!--  <RelativeLayout
@@ -116,10 +115,10 @@
     <RelativeLayout
         android:id="@+id/btn_about"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/t52dp" >
+        android:layout_height="@dimen/t52dp">
 
         <TextView
-            style="@style/tv_a_30"
+            style="@style/tv_a_31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -139,12 +138,12 @@
             android:layout_height="@dimen/line_height_1px"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/t15dp"
-            android:background="@color/hh_color_line" />
+            android:background="@color/hh_color_fg" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/btn_unlogin"
@@ -153,9 +152,9 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/t50dp"
-            android:background="@drawable/btn_login_selector"
+            android:background="@drawable/shape_dissmiss"
             android:text="@string/user_exit_login"
-            android:textColor="@color/hh_color_d"
+            android:textColor="@color/hh_color_a"
             android:textSize="16dp" />
     </RelativeLayout>
 

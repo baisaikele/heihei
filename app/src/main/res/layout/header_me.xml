@@ -20,7 +20,7 @@
 
         <TextView
             android:id="@+id/tv_level"
-            style="@style/tv_a_20"
+            style="@style/tv_a_21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -45,7 +45,7 @@
         android:layout_marginTop="@dimen/t10dp"
         android:singleLine="true"
         android:text=""
-        android:textColor="@color/hh_color_a"
+        android:textColor="#1D9AFF"
         android:textSize="@dimen/t20dp" />
 
     <RelativeLayout
@@ -58,7 +58,7 @@
             android:layout_width="@dimen/line_height_1px"
             android:layout_height="14dp"
             android:layout_centerInParent="true"
-            android:background="@color/hh_color_a" />
+            android:background="@color/hh_color_bb" />
 
         <TextView
             android:id="@+id/tv_follow"
@@ -69,7 +69,7 @@
             android:paddingBottom="@dimen/t8dp"
             android:paddingTop="@dimen/t4dp"
             android:text="@string/me_follow_num"
-            android:textColor="@color/hh_color_a"
+            android:textColor="@color/hh_color_d"
             android:textSize="@dimen/t12dp" />
 
         <TextView
@@ -81,13 +81,13 @@
             android:paddingBottom="@dimen/t8dp"
             android:paddingTop="@dimen/t4dp"
             android:text="@string/me_fans_num"
-            android:textColor="@color/hh_color_a"
+            android:textColor="@color/hh_color_d"
             android:textSize="12dp" />
     </RelativeLayout>
 
     <TextView 
         android:id="@+id/tv_sign"
-        style="@style/tv_b_24"
+        style="@style/tv_b_25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:textColor="@color/hh_color_a"
+                    android:textColor="@color/hh_color_bb"
                     android:textSize="15dp"
                     android:text="@string/user_black_account"/>
                 
@@ -141,13 +141,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:textSize="14dp"
-                    android:textColor="@color/hh_color_g"
+                    android:textColor="@color/hh_color_zts"
                     android:text="0"/>
                 <TextView 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textColor="@color/hh_color_a"
+                    android:textColor="@color/hh_color_bb"
                     android:textSize="@dimen/t14dp"
                     android:text="@string/user_black_bore"/>
             </LinearLayout>
@@ -173,7 +173,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:textColor="@color/hh_color_a"
+                    android:textColor="@color/hh_color_bb"
                     android:textSize="15dp"
                     android:text="@string/user_account_lucre"/>
                 
@@ -183,13 +183,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:textSize="14dp"
-                    android:textColor="@color/hh_color_h"
+                    android:textColor="@color/hh_color_zts"
                     android:text="0"/>
                 <TextView 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textColor="@color/hh_color_a"
+                    android:textColor="@color/hh_color_bb"
                     android:textSize="14dp"
                     android:text="@string/user_account_bill"/>
             </LinearLayout>

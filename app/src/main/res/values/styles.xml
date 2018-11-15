@@ -16,7 +16,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:windowBackground">@color/full_transparent</item>
-    	<item name="android:windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
     </style>
 
@@ -24,7 +24,7 @@
     <style name="AppNoAnimationTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:windowBackground">@color/full_transparent</item>
-    	<item name="android:windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
     <style name="activityAnimation" parent="@android:style/Animation">
@@ -174,7 +174,7 @@
 
     <style name="tv_a_34">
         <item name="android:textSize">17dp</item>
-        <item name="android:textColor">@color/hh_color_a</item>
+        <item name="android:textColor">@color/hh_color_ls</item>
     </style>
 
     <style name="tv_b_20">

@@ -20,7 +20,7 @@
            	android:scaleType="centerInside"
            	android:layout_gravity="center"
            	android:layout_marginLeft="@dimen/t10dp"
-            android:src="@drawable/hh_topbar_back"
+            android:src="@drawable/hh_topbar_back_s"
             android:visibility="visible" />
 
         <TextView

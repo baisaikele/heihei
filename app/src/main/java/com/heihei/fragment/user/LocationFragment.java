@@ -78,7 +78,7 @@ public class LocationFragment extends BaseFragment implements OnClickListener {
 		public void locationSuccess(PerfectLocation location) {
 			try {
 				LogWriter.i("jianfei", "location " + location.toString());
-				locationImg.setImageResource(R.drawable.hh_mylocation_location);
+				locationImg.setImageResource(R.drawable.hh_mylocation_location_ns);
 				locationCity.setText(location.cityName);
 				cityName = location.cityName;
 				latlng = location.latitude + "," + location.longitude;

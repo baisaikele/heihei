@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/t10dp"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_bl"
                 android:textSize="@dimen/t14dp"
                 android:text=""/>
             
@@ -49,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/t7dp"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_66"
                 android:textSize="10dp"
                 android:text="LV.1"/>
             
@@ -59,6 +59,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
 </com.heihei.cell.UserCell>

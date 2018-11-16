@@ -1,5 +1,6 @@
 package com.heihei.cell;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -73,6 +74,13 @@ public class MeHeader extends LinearLayout implements OnClickListener {
 
     }
 
+
+    /**
+     * 2018/11/16
+     * zhangyu
+     * 添加suppresslint   解决 tv_follow引用报红线
+     * **/
+    @SuppressLint("StringFormatMatches")
     public void setData() {
         iv_avatar.setUser(UserMgr.getInstance().getLoginUser());
         tv_nickname.setText(UserMgr.getInstance().getLoginUser().nickname);
@@ -88,21 +96,21 @@ public class MeHeader extends LinearLayout implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.btn_ticker :// 我的黑票
-            NavigationController.gotoIncomeFragment(getContext());
-            break;
-        case R.id.btn_money :// 我的钻
-            NavigationController.gotoMyDiamondFragment(getContext());
-            break;
-        case R.id.rl_top :// 编辑资料
-            NavigationController.gotoEditFragment(getContext());
-            break;
-        case R.id.tv_follow :// 我的关注
-            NavigationController.gotoFollowListFragment(getContext(), UserMgr.getInstance().getUid(),null);
-            break;
-        case R.id.tv_fans :// 我的粉丝
-            NavigationController.gotoFansListFragment(getContext(), UserMgr.getInstance().getUid(),null);
-            break;
+            case R.id.btn_ticker:// 我的黑票
+                NavigationController.gotoIncomeFragment(getContext());
+                break;
+            case R.id.btn_money:// 我的钻
+                NavigationController.gotoMyDiamondFragment(getContext());
+                break;
+            case R.id.rl_top:// 编辑资料
+                NavigationController.gotoEditFragment(getContext());
+                break;
+            case R.id.tv_follow:// 我的关注
+                NavigationController.gotoFollowListFragment(getContext(), UserMgr.getInstance().getUid(), null);
+                break;
+            case R.id.tv_fans:// 我的粉丝
+                NavigationController.gotoFansListFragment(getContext(), UserMgr.getInstance().getUid(), null);
+                break;
         }
 
     }

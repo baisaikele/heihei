@@ -10,7 +10,7 @@
     <!-- 灰色透明 -->
     <color name="hh_color_tbb">#FFBBBBBB</color>
     <!-- 黑色字体 -->
-    <color name="hh_color_hszt"> #444444</color>
+    <color name="hh_color_hszt">#444444</color>
     <!-- 灰色 -->
     <color name="hh_color_bb">#BBBBBB</color>
     <!-- 白色 -->
@@ -32,6 +32,10 @@
     <color name="hh_color_g">#ffb3f99b</color>
     <!-- 黄色 -->
     <color name="hh_color_h">#fffaeb82</color>
+
+    <!-- 黄色 -->
+    <color name="hh_color_hs">#FF9F00</color>
+
     <!-- 黄色 -->
     <color name="hh_color_65">#ff656565</color>
     <color name="hh_color_d8">#ffd8d8d8</color>

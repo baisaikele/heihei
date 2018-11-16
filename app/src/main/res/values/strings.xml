@@ -82,7 +82,7 @@
     <string name="user_account_lucre">收益</string>
     <string name="user_account_bill">黑票</string>
     <string name="user_account_mine_bore">黑户</string>
-    <string name="user_account_balance">黑户余额</string>
+    <string name="user_account_balance">黑户余额:</string>
     <string name="user_account_pay">充值</string>
     <string name="user_pay_success">支付成功</string>
     <string name="user_pay_fail">支付失败</string>

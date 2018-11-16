@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_hs"
                 android:textSize="15dp"
                 android:text="99"/>
             
@@ -61,6 +61,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
         android:layout_marginLeft="14dp"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
 </com.heihei.cell.RechargeDiamondCell>

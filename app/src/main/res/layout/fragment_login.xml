@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/login_line_height"
         android:layout_marginLeft="15dp"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <EditText
         android:id="@+id/et_code"
@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/login_line_height"
         android:layout_marginLeft="15dp"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 	
 	<TextView 
 	    style="@style/tv_b_24"

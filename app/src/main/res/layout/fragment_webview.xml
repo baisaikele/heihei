@@ -12,7 +12,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height_1px"
-        android:background="@color/hh_color_line" />
+        android:background="@color/hh_color_fg" />
 
     <WebView
         android:id="@+id/rule_webview"

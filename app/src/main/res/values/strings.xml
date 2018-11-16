@@ -163,7 +163,7 @@
     <string name="setting_proxy">服务条款与使用协议</string>
     <string name="setting_contact_us">联系我们</string>
     <string name="setting_copyright">Copyright © 2016 Wenlu.com All Rights Reserved</string>
-    <string name="user_dialog_ticker">黑票 %s</string>
+    <string name="user_dialog_ticker">收益 %s</string>
     <string name="user_follow">关注</string>
     <string name="user_followed">已关注</string>
     <string name="user_fans">粉丝</string>

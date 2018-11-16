@@ -65,11 +65,11 @@ public class HomeVideoCell extends LinearLayout implements ListCell, OnClickList
 		if (mLiveInfo.type == LiveInfo.TYPE_LIVE) {
 			tv_live.setVisibility(View.VISIBLE);
 			tv_record.setVisibility(View.GONE);
-			tv_num.setText(mLiveInfo.totalUsers + "人");
+			tv_num.setText(mLiveInfo.totalUsers + "");
 		} else {
 			tv_live.setVisibility(View.GONE);
 			tv_record.setVisibility(View.VISIBLE);
-			tv_num.setText(mLiveInfo.totalUsers + "人");
+			tv_num.setText(mLiveInfo.totalUsers + "");
 		}
 
 		iv_avatar.setUser(mLiveInfo.creator);

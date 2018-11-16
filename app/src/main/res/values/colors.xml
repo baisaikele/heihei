@@ -20,6 +20,7 @@
     <color name="hh_color_c">#ff494d55</color>
     <!-- 蓝色 -->
     <color name="hh_color_bl">#1D9AFF</color>
+    <color name="hh_color_dbl">#761d9aff</color>
     <!-- 近黑色 -->
     <color name="hh_color_d">#ff212427</color>
     <!-- 蓝色 -->
@@ -32,6 +33,7 @@
     <color name="hh_color_h">#fffaeb82</color>
     <!-- 黄色 -->
     <color name="hh_color_65">#ff656565</color>
+    <color name="hh_color_d8">#ffd8d8d8</color>
 
     <!-- ziti -->
     <color name="hh_color_zts">#666666</color>

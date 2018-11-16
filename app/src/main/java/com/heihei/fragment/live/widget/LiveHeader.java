@@ -163,7 +163,7 @@ public class LiveHeader extends LinearLayout implements OnClickListener {
 					mAnchor.isFollowed = false;
 					btn_follow.setVisibility(View.VISIBLE);
 					btn_follow.setText(R.string.user_add_follow);
-					btn_follow.setTextColor(getResources().getColor(R.color.hh_color_g));
+					btn_follow.setTextColor(getResources().getColor(R.color.hh_color_bl));
 
 				}
 			} else {
@@ -171,7 +171,7 @@ public class LiveHeader extends LinearLayout implements OnClickListener {
 					mAnchor.isFollowed = true;
 					btn_follow.setVisibility(View.VISIBLE);
 					btn_follow.setText(R.string.user_followed);
-					btn_follow.setTextColor(getResources().getColor(R.color.hh_color_b));
+					btn_follow.setTextColor(getResources().getColor(R.color.hh_color_dbl));
 				}
 			}
 
@@ -246,11 +246,11 @@ public class LiveHeader extends LinearLayout implements OnClickListener {
 				btn_follow.setVisibility(View.VISIBLE);
 				btn_follow.setVisibility(View.VISIBLE);
 				btn_follow.setText(R.string.user_followed);
-				btn_follow.setTextColor(getResources().getColor(R.color.hh_color_b));
+				btn_follow.setTextColor(getResources().getColor(R.color.hh_color_dbl));
 			} else {
 				btn_follow.setVisibility(View.VISIBLE);
 				btn_follow.setText(R.string.user_add_follow);
-				btn_follow.setTextColor(getResources().getColor(R.color.hh_color_g));
+				btn_follow.setTextColor(getResources().getColor(R.color.hh_color_bl));
 			}
 
 			if (user.uid.equals(UserMgr.getInstance().getUid())) {
@@ -270,7 +270,7 @@ public class LiveHeader extends LinearLayout implements OnClickListener {
 							mAnchor.isFollowed = false;
 							btn_follow.setVisibility(View.VISIBLE);
 							btn_follow.setText(R.string.user_add_follow);
-							btn_follow.setTextColor(getResources().getColor(R.color.hh_color_g));
+							btn_follow.setTextColor(getResources().getColor(R.color.hh_color_bl));
 						} else {
 							UIUtils.showToast(msg);
 						}
@@ -286,7 +286,7 @@ public class LiveHeader extends LinearLayout implements OnClickListener {
 							mAnchor.isFollowed = true;
 							btn_follow.setVisibility(View.VISIBLE);
 							btn_follow.setText(R.string.user_followed);
-							btn_follow.setTextColor(getResources().getColor(R.color.hh_color_b));
+							btn_follow.setTextColor(getResources().getColor(R.color.hh_color_dbl));
 						} else {
 							UIUtils.showToast(msg);
 						}

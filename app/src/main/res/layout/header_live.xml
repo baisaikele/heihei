@@ -32,14 +32,13 @@
             android:layout_centerVertical="true"
             android:padding="@dimen/t15dp"
             android:text="+关注"
-            android:textColor="@color/hh_color_g"
+            android:textColor="@color/hh_color_bl"
             android:textSize="12dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/t101dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/shape_bg_live_userinfo"
             android:gravity="center_horizontal"
             android:minWidth="@dimen/t121dp"
             android:orientation="vertical"
@@ -75,7 +74,7 @@
                 android:id="@+id/tv_nickname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/hh_color_a"
+                android:textColor="@color/hh_color_bl"
                 android:textSize="@dimen/t14dp" />
 
             <TextView
@@ -85,7 +84,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/t2dp"
                 android:text="@string/user_dialog_ticker"
-                android:textColor="@color/hh_color_b"
+                android:textColor="@color/hh_color_hszt"
                 android:textSize="@dimen/t12dp"
                 android:visibility="visible" />
         </LinearLayout>
@@ -104,10 +103,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/live_topic"
-            android:textColor="@color/hh_color_b"
+            android:textColor="@color/hh_color_bl"
             android:textSize="14dp" />
 
         <ImageView
+            android:visibility="gone"
             android:id="@+id/btn_edit_topic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
